@@ -190,6 +190,43 @@
   border-radius: 6px;
   font-weight: 600;
 }
+
+.category-header {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.categories-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.category-box {
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 32px;
+  border-radius: 8px;
+}
+
+.category-box i {
+  font-size: 32px;
+  color: #000;
+}
+
+.category-box h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  padding-top: 12px;
+}
 @media only screen and (max-width: 767px) {
   .banner-body {
     grid-template-columns: 1fr;
@@ -292,5 +329,10 @@
     color: #fff;
     font-size: 14px;
     font-weight: 500;
+  }
+
+  .categories-box {
+    gap: 24px;
+    justify-content: center;
   }
 }
