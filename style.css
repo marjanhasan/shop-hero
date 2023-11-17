@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-section {
@@ -14,4 +16,111 @@
 
 .logo {
   width: 20%;
+}
+
+.bg-carousel {
+  background-image: url(./images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+.banner-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.banner-right {
+  padding-top: 10%;
+  padding-left: 5%;
+}
+
+.banner-left {
+  padding-top: 15%;
+}
+
+.banner-left h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #1e046a;
+}
+
+.banner-left h1 {
+  font-size: 84px;
+  font-weight: 400;
+  color: #000;
+}
+
+.banner-left h1 b {
+  font-weight: 600;
+}
+
+.banner-left p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+
+.banner-left button {
+  padding: 16px 56px;
+  background-color: #171495;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 767px) {
+  /* CSS for mobile devices */
+  .banner-body {
+    grid-template-columns: 1fr;
+  }
+  .banner-right {
+    padding-top: 5%;
+    padding-left: 0;
+  }
+
+  .banner-left {
+    padding-top: 15%;
+    text-align: center;
+  }
+
+  .banner-left h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1e046a;
+  }
+
+  .banner-left h1 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #000;
+  }
+
+  .banner-left h1 b {
+    font-weight: 500;
+  }
+
+  .banner-left p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+  }
+
+  .banner-left button {
+    padding: 8px 32px;
+    background-color: #171495;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    font-weight: 600;
+  }
 }
